@@ -433,6 +433,9 @@ fabric.properties
 .idea/caches/build_file_checksums.ser
 
 .idea
-.idea/.idea.COS368FinalJokeApp
+.idea/.idea.COS368FinalJokeApp'
+
+.DS_Store
+*/.DS_Store
 
 # End of https://www.gitignore.io/api/rider
