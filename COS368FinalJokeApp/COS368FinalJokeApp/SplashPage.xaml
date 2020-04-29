@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.SplashPage"
+             NavigationPage.HasNavigationBar="false">
+
+    <ContentPage.Content>
+        <RelativeLayout>
+            <Image Source="https://i.pinimg.com/originals/71/92/5c/71925c75936297af1e041e98cebfdfe6.jpg" Aspect="AspectFill"
+                   RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}"/>
+
+            <Grid RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                   RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+
+                <Label Text="J" VerticalOptions="Center" HorizontalOptions="Center" FontSize="400">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnTap"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Jokerman" />
+                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+            </Grid>
+
+        </RelativeLayout>
+        
+    </ContentPage.Content>
+</ContentPage>

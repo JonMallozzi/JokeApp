@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:mypages="clr-namespace:COS368FinalJokeApp;assembly=COS368FinalJokeApp"
+             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+             android:TabbedPage.ToolbarPlacement="Bottom"
+             x:Class="COS368FinalJokeApp.NavPage">
+    
+
+    <!--Pages can be added as references or inline-->
+    <TabbedPage.Children>
+        <mypages:HomePage Title="Home"/>
+        <mypages:SearchPage Title="Search"/>
+        <mypages:UploadPage Title="Upload"/>
+        <mypages:SettingsPage Title="Settings"/>
+    </TabbedPage.Children>
+
+</TabbedPage>
