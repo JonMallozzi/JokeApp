@@ -27,5 +27,11 @@ namespace COS368FinalJokeApp
                 lbl.Text = file.FileName;
             }
         }
+
+        async void OnSubmitTapped(Object sender, EventArgs args)
+        {
+            // user submits a photo
+        }
+
     }
 }

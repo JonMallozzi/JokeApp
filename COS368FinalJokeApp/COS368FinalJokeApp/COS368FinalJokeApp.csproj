@@ -21,6 +21,9 @@
     <Compile Update="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="RecoveryPage.xaml.cs">
+      <DependentUpon>RecoveryPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="NavPage.xaml.cs">
       <DependentUpon>NavPage.xaml</DependentUpon>
     </Compile>
@@ -29,6 +32,9 @@
     </Compile>
     <Compile Update="SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="LoginPage.xaml.cs">
+      <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 

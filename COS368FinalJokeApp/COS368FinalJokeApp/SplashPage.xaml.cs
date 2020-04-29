@@ -18,7 +18,7 @@ namespace COS368FinalJokeApp
         }
         async void OnTap(Object sender, EventArgs args)
         {
-            await Navigation.PushAsync(new NavPage());
+            await Navigation.PushAsync(new LoginPage());
         }
     }
 }

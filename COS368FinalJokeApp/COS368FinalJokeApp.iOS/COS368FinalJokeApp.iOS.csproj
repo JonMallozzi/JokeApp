@@ -137,4 +137,40 @@
       <Name>COS368FinalJokeApp</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\covid19.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\dad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\fortnite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\gradientbackground.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\sports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\politics.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\tigerking.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_uploadphoto.png" />
+  </ItemGroup>
 </Project>

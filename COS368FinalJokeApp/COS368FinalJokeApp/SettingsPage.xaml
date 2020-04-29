@@ -4,17 +4,37 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.SettingsPage">
+             x:Class="COS368FinalJokeApp.SettingsPage"
+             BackgroundImage="gradientbackground.png">
 
     <ContentPage.Content>
-        <TableView Intent="Settings" HasUnevenRows="True">
-            <TableRoot>
-                <TableSection Title="Settings">
-
-                    
-                    <ViewCell>
-                        <StackLayout Orientation ="Horizontal" >
-                            <Label Text="Darkmode" HorizontalOptions="StartAndExpand" FontSize="50">
+        <StackLayout>
+            <Label Text="Settings" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <TableView Intent="Settings" HasUnevenRows="True" Margin="20">
+                <TableRoot>
+                    <TableSection>
+                        <ViewCell>
+                            <StackLayout Orientation ="Horizontal" >
+                                <Label Text="Dark Mode" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="iOS" Value="Jokerman" />
+                                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Switch HorizontalOptions="End" Toggled="OnDarkmodeToggled" />
+                            </StackLayout>
+                        </ViewCell >
+                        <ViewCell x:Name="LanguageCell" Tapped="OnLangTapped">
+                            <Label Text= "Language >" FontSize="50" TextColor="White">
                                 <Label.FontFamily>
                                     <OnPlatform x:TypeArguments="x:String">
                                         <On Platform="iOS" Value="Jokerman" />
@@ -22,32 +42,31 @@
                                     </OnPlatform>
                                 </Label.FontFamily>
                             </Label>
-                            <Switch HorizontalOptions="End" Toggled="OnDarkmodeToggled" />
-                        </StackLayout>
-                    </ViewCell >
-                    <ViewCell x:Name="LanguageCell" Tapped="OnLangTapped">
-                        <Label Text= "Language  >" FontSize="50">
-                            <Label.FontFamily>
-                                <OnPlatform x:TypeArguments="x:String">
-                                    <On Platform="iOS" Value="Jokerman" />
-                                    <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
-                                </OnPlatform>
-                            </Label.FontFamily>
-                        </Label>
-                    </ViewCell>
-                    <ViewCell x:Name="PrivacyCell" Tapped="OnPrivTapped">
-                        <Label Text= "Privacy  >" FontSize="50">
-                            <Label.FontFamily>
-                                <OnPlatform x:TypeArguments="x:String">
-                                    <On Platform="iOS" Value="Jokerman" />
-                                    <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
-                                </OnPlatform>
-                            </Label.FontFamily>
-                        </Label>
-                    </ViewCell>
-                </TableSection>
-            </TableRoot>
-        </TableView>
-
+                        </ViewCell>
+                        <ViewCell x:Name="PrivacyCell" Tapped="OnPrivTapped">
+                            <Label Text= "Privacy >" FontSize="50" TextColor="White">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Jokerman" />
+                                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+                        </ViewCell>
+                    </TableSection>
+                </TableRoot>
+            </TableView>
+            <Label Text="Log Out" TextColor="White" FontSize="50" Padding="10, 10, 10, 100" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLogoutTapped"/>
+                </Label.GestureRecognizers>
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

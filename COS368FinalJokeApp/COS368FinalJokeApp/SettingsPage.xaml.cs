@@ -36,5 +36,10 @@ namespace COS368FinalJokeApp
         {
             await Navigation.PushAsync(new PrivacyPage());
         }
+
+        async void OnLogoutTapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LoginPage());
+        }
     }
 }

@@ -4,18 +4,34 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.UploadPage">
+             x:Class="COS368FinalJokeApp.UploadPage"
+             BackgroundImage="gradientbackground.png">
 
     <ContentPage.Content>
-        
         <StackLayout Padding="30">
-            <Image Source="https://toppng.com/uploads/preview/file-upload-image-icon-115632290507ftgixivqp.png" >
-                <Image.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnUploadTapped"/>
-                </Image.GestureRecognizers>
-            </Image>
-            <Label Text="File Is :" x:Name="lbl"/>
-            <Entry Placeholder="Tags: Dad Jokes, Etc" />
+            <Frame BorderColor="White" CornerRadius="20" BackgroundColor="Transparent">
+                <Image Source="icon_uploadphoto">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnUploadTapped"/>
+                    </Image.GestureRecognizers>
+                </Image>
+            </Frame>
+            <Label Text="File Is :" x:Name="lbl" Padding="5" FontSize="20"/>
+            <Frame OutlineColor="White" CornerRadius="30" BackgroundColor="Transparent">
+                <Entry Placeholder="Tags: Dad Jokes, Etc"/>
+            </Frame>
+
+            <Label Text="Submit" TextColor="White" FontSize="40" Padding="0, 30, 0, 0" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnSubmitTapped"/>
+                </Label.GestureRecognizers>
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
 
         </StackLayout>
     </ContentPage.Content>
