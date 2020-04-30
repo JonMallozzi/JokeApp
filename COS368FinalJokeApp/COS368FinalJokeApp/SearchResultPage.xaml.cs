@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public SearchResultPage()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
         }
 
         protected override void OnAppearing()

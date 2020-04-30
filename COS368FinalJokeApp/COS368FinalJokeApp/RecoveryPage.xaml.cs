@@ -16,7 +16,7 @@ namespace COS368FinalJokeApp
         public RecoveryPage()
         {
             InitializeComponent();
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Black;
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
         }
 
         async void OnResetTapped(Object sender, EventArgs args)

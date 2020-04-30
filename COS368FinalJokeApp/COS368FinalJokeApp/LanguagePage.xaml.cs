@@ -15,7 +15,7 @@ namespace COS368FinalJokeApp
         public LanguagePage()
         {
             InitializeComponent();
-            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Black;
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
         }
     }
 }
