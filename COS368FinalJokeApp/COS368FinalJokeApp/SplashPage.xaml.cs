@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public SplashPage()
         {
             InitializeComponent();
+            
         }
         async void OnTap(Object sender, EventArgs args)
         {

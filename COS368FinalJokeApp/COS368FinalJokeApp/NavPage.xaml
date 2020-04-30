@@ -9,7 +9,8 @@
              android:TabbedPage.ToolbarPlacement="Bottom"
              x:Class="COS368FinalJokeApp.NavPage"
              BarBackgroundColor="#F23333"
-             BarTextColor="Black">
+             BarTextColor="Black"
+             SelectedTabColor="White">
 
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>

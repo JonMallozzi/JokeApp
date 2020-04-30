@@ -6,6 +6,7 @@
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.PrivacyPage"
              BackgroundImage="gradientbackground.png">
+
     <ContentPage.Content>
         <StackLayout Padding="40">
             <Label Text="Some Lengthy Privacy Spiel Here"></Label>

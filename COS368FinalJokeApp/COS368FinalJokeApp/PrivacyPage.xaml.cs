@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public PrivacyPage()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Black;
         }
     }
 }

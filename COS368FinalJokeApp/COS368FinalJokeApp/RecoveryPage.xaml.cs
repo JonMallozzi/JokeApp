@@ -16,6 +16,7 @@ namespace COS368FinalJokeApp
         public RecoveryPage()
         {
             InitializeComponent();
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Color.Black;
         }
 
         async void OnResetTapped(Object sender, EventArgs args)
