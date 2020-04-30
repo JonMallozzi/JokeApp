@@ -173,4 +173,19 @@
   <ItemGroup>
     <BundleResource Include="Resources\drawable\icon_uploadphoto.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\guijoke.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_comments.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_happy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_sad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\drawable\icon_share.png" />
+  </ItemGroup>
 </Project>

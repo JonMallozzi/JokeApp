@@ -8,9 +8,8 @@
              xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
              android:TabbedPage.ToolbarPlacement="Bottom"
              x:Class="COS368FinalJokeApp.NavPage"
-             BarBackgroundColor="Transparent"
+             BarBackgroundColor="#F23333"
              BarTextColor="Black">
-
 
     <!--Pages can be added as references or inline-->
     <TabbedPage.Children>

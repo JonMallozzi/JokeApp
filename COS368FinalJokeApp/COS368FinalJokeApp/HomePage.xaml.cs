@@ -12,10 +12,15 @@ namespace COS368FinalJokeApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class HomePage : ContentPage
     {
-
         public HomePage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            CVJokes.ItemsSource = new JokeService().GetJokesList();
         }
     }
 }

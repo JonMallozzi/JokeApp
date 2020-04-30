@@ -56,17 +56,19 @@
                     </TableSection>
                 </TableRoot>
             </TableView>
-            <Label Text="Log Out" TextColor="White" FontSize="50" Padding="10, 10, 10, 100" HorizontalOptions="Center">
-                <Label.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="OnLogoutTapped"/>
-                </Label.GestureRecognizers>
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Jokerman" />
-                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
+            <Frame BackgroundColor="Crimson" Margin="70, 20, 70, 70" CornerRadius="60">
+                <Label Text="Log Out" TextColor="White" FontSize="50" Margin="0, -20, 0, -20" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLogoutTapped"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Jokerman" />
+                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </Frame>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
