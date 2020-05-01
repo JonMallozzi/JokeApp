@@ -22,5 +22,18 @@ namespace COS368FinalJokeApp
             base.OnAppearing();
             CVJokes.ItemsSource = new JokeService().GetJokesList();
         }
+
+        async void OnShareClicked(System.Object sender, System.EventArgs e)
+        {
+            //  await Navigation.PushModalAsync(new ShareModal());
+            string action = await DisplayActionSheet("Share via", "Cancel", null, "SMS", "Email", "Twitter", "Facebook");
+          
+        }
+
+        async void OnCommentClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new CommentsPage());
+
+        }
     }
 }

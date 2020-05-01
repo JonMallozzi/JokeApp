@@ -53,8 +53,8 @@
                             <ImageButton Source="icon_sad" BackgroundColor="Transparent"/>
                         </StackLayout>
                         <StackLayout Orientation="Horizontal" Spacing="10" Padding="0, 0, 20, 0" HorizontalOptions="EndAndExpand">
-                            <ImageButton Source="icon_comments" BackgroundColor="Transparent"/>
-                            <ImageButton Source="icon_share" BackgroundColor="Transparent"/>
+                            <ImageButton Source="icon_comments" BackgroundColor="Transparent" Clicked="OnCommentClicked"/>
+                            <ImageButton Source="icon_share" BackgroundColor="Transparent" Clicked="OnShareClicked" />
                         </StackLayout>
                     </StackLayout>
                 </StackLayout>

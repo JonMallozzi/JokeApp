@@ -9,9 +9,41 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Language Settings Here"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Language" TextColor="White" FontSize="30" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+
+            <StackLayout Orientation="Horizontal">
+                <Label Text="English (US)" Padding="10" FontSize="30" TextColor="White" >
+
+                </Label>
+                 <CheckBox IsChecked="True"> </CheckBox>
+            </StackLayout>
+
+                       <StackLayout Orientation="Horizontal">
+                <Label Text="Español (EE. UU.)" Padding="10" FontSize="30" TextColor="White" >
+
+                </Label>
+                            <CheckBox> </CheckBox>
+            </StackLayout>
+
+            
+                       <StackLayout Orientation="Horizontal">
+                <Label Text="日本語" Padding="10" FontSize="30" TextColor="White" >
+
+                </Label>
+                           <CheckBox> </CheckBox>
+            </StackLayout>
+
+         
+
+
         </StackLayout>
+
     </ContentPage.Content>
 </ContentPage>
