@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.SearchPage"
+             BackgroundImage="gradientbackground.png">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Orientation="Vertical" Spacing="10">
+            <StackLayout Orientation="Vertical">
+                <Button Text="Search" Clicked="OnSearchClicked" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" BackgroundColor="Transparent" HeightRequest="65"/>
+            </StackLayout>
+            <StackLayout Padding="10, 0, 10, 0">
+            <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30" >
+                <ImageButton Source="sports.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="dad.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30">
+                <ImageButton Source="fortnite.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+                <ImageButton Source="covid19.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+                <StackLayout Orientation="Horizontal" VerticalOptions="Center" Spacing="30">
+                    <ImageButton Source="politics.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+                    <ImageButton Source="tigerking.png" WidthRequest="160" HeightRequest="160" CornerRadius="120" BorderWidth="3" BorderColor="White" BackgroundColor="Transparent" HorizontalOptions="FillAndExpand"/>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

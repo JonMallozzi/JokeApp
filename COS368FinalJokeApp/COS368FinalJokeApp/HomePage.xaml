@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="COS368FinalJokeApp.HomePage"
+             BackgroundImage="gradientbackground.png">
+
+    <ContentPage.Content>
+        <StackLayout Padding="20" Orientation="Vertical">
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10">
+                <Button Text="Fortnite" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+                <Button Text="Memes" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent"/>
+                <Button Text="Covid-19" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent"/>
+            </StackLayout>
+            <StackLayout Padding="0, 20, 0, 20">
+                <CarouselView x:Name="CVJokes" PeekAreaInsets="5">
+                    <CarouselView.ItemTemplate>
+                        <DataTemplate>
+                            <Frame BorderColor="LightGray" CornerRadius="20" BackgroundColor="Black">
+                                <StackLayout>
+                                    <Label Text="{Binding User}" TextColor="White" FontSize="15" HorizontalTextAlignment="Start"/>
+                                    <Image Source="{Binding Image}" Aspect="AspectFit" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="StartAndExpand">
+                                            <Label Text="{Binding Likes}" TextColor="White" FontSize="15"/>
+                                        </StackLayout>
+                                        <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand">
+                                            <Label Text="{Binding Comments}" TextColor="White" FontSize="15"/>
+                                        </StackLayout>
+                                    </StackLayout>
+                                </StackLayout>
+                            </Frame>
+                        </DataTemplate>
+                    </CarouselView.ItemTemplate>
+                </CarouselView>
+                <StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="20, 0, 0, 0"  HorizontalOptions="StartAndExpand">
+                            <ImageButton Source="icon_happy" BackgroundColor="Transparent"/>
+                            <ImageButton Source="icon_sad" BackgroundColor="Transparent"/>
+                        </StackLayout>
+                        <StackLayout Orientation="Horizontal" Spacing="10" Padding="0, 0, 20, 0" HorizontalOptions="EndAndExpand">
+                            <ImageButton Source="icon_comments" BackgroundColor="Transparent"/>
+                            <ImageButton Source="icon_share" BackgroundColor="Transparent"/>
+                        </StackLayout>
+                    </StackLayout>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
