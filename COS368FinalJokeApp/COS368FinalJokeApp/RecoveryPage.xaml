@@ -8,8 +8,8 @@
              BackgroundImage="gradientbackground.png">
 
     <ContentPage.Content>
-        <StackLayout Padding="30">
-            <Label Text="Recovery" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center">
+        <StackLayout Padding="10">
+            <Label Text="Recovery" TextColor="White" FontSize="50" HorizontalOptions="Center">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="Jokerman" />

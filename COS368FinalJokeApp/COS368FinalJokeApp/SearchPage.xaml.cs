@@ -17,15 +17,37 @@ namespace COS368FinalJokeApp
             InitializeComponent();
         }
 
-
         async void OnSearchClicked(Object sender, EventArgs args)
         {
             await Navigation.PushAsync(new SearchResultPage());
         }
 
-        private void Button_Clicked(object sender, EventArgs e)
+        async void OnFortniteClicked(System.Object sender, System.EventArgs e)
         {
+            await Navigation.PushAsync(new FortniteJokesPage());
+        }
 
+        async void OnSportsClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new SportsJokesPage());
+        }
+
+        async void OnDadJokesClicked(System.Object sender, System.EventArgs e)
+        {
+            await Navigation.PushAsync(new DadJokesPage());
+        }
+
+        async void OnCovid19Clicked(System.Object sender, System.EventArgs e)
+        {
+            await DisplayAlert("", "Currently Unavailable...", "OK");
+        }
+        async void OnPoliticsClicked(System.Object sender, System.EventArgs e)
+        {
+            await DisplayAlert("", "Currently Unavailable...", "OK");
+        }
+        async void OnTigerKingClicked(System.Object sender, System.EventArgs e)
+        {
+            await DisplayAlert("", "Currently Unavailable...", "OK");
         }
     }
 }

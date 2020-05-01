@@ -18,6 +18,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="DadJokesPage.xaml.cs">
+      <DependentUpon>DadJokesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="SportsJokesPage.xaml.cs">
+      <DependentUpon>SportsJokesPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="FortniteJokesPage.xaml.cs">
+      <DependentUpon>FortniteJokesPage.xaml</DependentUpon>
+    </Compile>
     <Compile Update="HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>

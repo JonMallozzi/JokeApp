@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="COS368FinalJokeApp.CommentsPage"  BackgroundImage="gradientbackground.png" Title="Comments">
+    <ContentPage.Content>
+        <StackLayout Padding="10, 0, 10, 0">
+            <Label Text="Comments" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="bailey131:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="HAHA!" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="JKay:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="@bailey131 relax it wasn't that funny.." TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="MemeKing:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="Trash meme, mine are way better." TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="f0rtniteR0x:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="post more fortnite pls" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="trump2020bruda:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="I think this is what we need in life" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="jonnnn:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="where tf is my stimulus check @trump2020bruda" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="karensAreCute:" TextColor="White" FontAttributes="Bold" Padding="5" />
+                <Label Text="this is so funny" TextColor="White" Padding="5" HorizontalTextAlignment="Start" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

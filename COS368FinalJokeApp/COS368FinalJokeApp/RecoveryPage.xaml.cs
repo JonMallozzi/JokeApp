@@ -21,7 +21,7 @@ namespace COS368FinalJokeApp
 
         async void OnResetTapped(Object sender, EventArgs args)
         {
-            // user gets the password recovery email
+            await DisplayAlert("Reset Requested", "Recovery instructions sent to your email!", "OK");
         }
 
     }
