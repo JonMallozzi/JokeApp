@@ -10,17 +10,18 @@ using Xamarin.Forms.Xaml;
 namespace COS368FinalJokeApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : ContentPage
+    public partial class DadJokesPage : ContentPage
     {
-        public HomePage()
+        public DadJokesPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
-            CVJokes.ItemsSource = new JokeService().GetJokesListHome();
+            CVJokes.ItemsSource = new JokeService().GetJokesListDad();
         }
 
         async void OnShareClicked(System.Object sender, System.EventArgs e)
@@ -31,21 +32,6 @@ namespace COS368FinalJokeApp
         async void OnCommentClicked(System.Object sender, System.EventArgs e)
         {
             await Navigation.PushAsync(new CommentsPage());
-        }
-
-        async void OnFortniteClicked(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new FortniteJokesPage());
-        }
-
-        async void OnSportsClicked(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new SportsJokesPage());
-        }
-
-        async void OnDadJokesClicked(System.Object sender, System.EventArgs e)
-        {
-            await Navigation.PushAsync(new DadJokesPage());
         }
 
         async void OnJokesScrolled(System.Object sender, System.EventArgs e)

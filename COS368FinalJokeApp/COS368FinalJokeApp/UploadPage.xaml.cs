@@ -20,18 +20,23 @@ namespace COS368FinalJokeApp
 
         async void OnUploadTapped(Object sender, EventArgs args)
         {
-            var file = await CrossFilePicker.Current.PickFile();
-
-            if (file != null)
+            try
             {
-                lbl.Text = file.FileName;
+                var file = await CrossFilePicker.Current.PickFile();
+                if (file == null)
+                    return;
+                else
+                    lbl.Text = file.FileName;
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Using it again breaks it", ex.ToString(), "OK");
             }
         }
 
         async void OnSubmitTapped(Object sender, EventArgs args)
         {
-            // user submits a photo
+            await DisplayAlert("Submit Successful", "Joke posted on your tag!", "OK");
         }
-
     }
 }

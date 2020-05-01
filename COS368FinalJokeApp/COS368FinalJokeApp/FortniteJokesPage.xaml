@@ -4,12 +4,12 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.HomePage"
+             x:Class="COS368FinalJokeApp.FortniteJokesPage"
              BackgroundImage="gradientbackground.png">
 
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
-            <Label Text="Feed" TextColor="White" FontSize="40" HorizontalOptions="Center">
+            <Label Text="Fortnite" TextColor="White" FontSize="40" HorizontalOptions="Center">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="Jokerman" />
@@ -19,11 +19,6 @@
             </Label>
             <StackLayout Margin="-20, -5, -20, 0">
                 <BoxView HeightRequest="1" Color="White"/>
-            </StackLayout>
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Spacing="10" Padding="0, 5, 0, 0">
-                <Button Text="Fortnite" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="OnFortniteClicked" />
-                <Button Text="Sports" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand"  BackgroundColor="Transparent" Clicked="OnSportsClicked"/>
-                <Button Text="Dad Jokes" TextColor="white" CornerRadius="40" BorderWidth="4" BorderColor="White" HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="OnDadJokesClicked"/>
             </StackLayout>
             <StackLayout Padding="0, 20, 0, 20">
                 <CarouselView x:Name="CVJokes" PeekAreaInsets="5" Scrolled="OnJokesScrolled">

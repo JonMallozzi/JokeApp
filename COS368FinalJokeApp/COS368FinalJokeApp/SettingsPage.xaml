@@ -25,7 +25,7 @@
                     <TableSection>
                         <ViewCell>
                             <StackLayout Orientation ="Horizontal" >
-                                <Label Text="Dark Mode" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
+                                <Label Text="Notifications" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
                                     <Label.FontFamily>
                                         <OnPlatform x:TypeArguments="x:String">
                                             <On Platform="iOS" Value="Jokerman" />
@@ -33,7 +33,7 @@
                                         </OnPlatform>
                                     </Label.FontFamily>
                                 </Label>
-                                <Switch HorizontalOptions="End" Toggled="OnDarkmodeToggled" />
+                                <Switch HorizontalOptions="End" Toggled="OnNotificationsToggled" IsToggled="{Binding State}"/>
                             </StackLayout>
                         </ViewCell >
                         <ViewCell x:Name="LanguageCell" Tapped="OnLangTapped">

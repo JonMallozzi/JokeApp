@@ -17,11 +17,13 @@ namespace COS368FinalJokeApp
             InitializeComponent();
         }
 
-        async void OnDarkmodeToggled(Object sender, EventArgs args)
+        async void OnNotificationsToggled(Object sender, ToggledEventArgs e)
         {
-            await Navigation.PushAsync(new PrivacyPage());
+            if (e.Value == true)
+            {
+                await DisplayAlert("", "Notifications Turned On", "OK");
+            }
         }
-
         async void Privacy_Cell_OnTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PrivacyPage());
