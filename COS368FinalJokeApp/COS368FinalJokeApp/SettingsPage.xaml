@@ -17,7 +17,10 @@
                     </OnPlatform>
                 </Label.FontFamily>
             </Label>
-            <TableView Intent="Settings" HasUnevenRows="True" Margin="20">
+            <StackLayout Margin="-20, -15, -20, 0">
+                <BoxView HeightRequest="1" Color="White"/>
+            </StackLayout>
+            <TableView Intent="Settings" HasUnevenRows="True" Margin="10">
                 <TableRoot>
                     <TableSection>
                         <ViewCell>
