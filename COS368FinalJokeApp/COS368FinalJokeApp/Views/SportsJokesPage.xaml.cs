@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public SportsJokesPage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
             NavigationPage.SetHasNavigationBar(this, false);
         }
 

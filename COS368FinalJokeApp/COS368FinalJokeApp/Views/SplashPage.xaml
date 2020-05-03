@@ -5,12 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.SplashPage"
-             NavigationPage.HasNavigationBar="false"
-             BackgroundImage="gradientbackground.png">
+             NavigationPage.HasNavigationBar="false">
 
     <ContentPage.Content>
         <RelativeLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="J" VerticalOptions="Center" HorizontalOptions="Center" FontSize="400">
+            <Label Text="J" VerticalOptions="Center" HorizontalOptions="Center" FontSize="400" TextColor="White">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTap"/>
                 </Label.GestureRecognizers>

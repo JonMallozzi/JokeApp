@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.SportsJokesPage"
-             BackgroundImage="gradientbackground.png">
+             x:Class="COS368FinalJokeApp.SportsJokesPage">
 
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">

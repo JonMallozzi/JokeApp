@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public SearchPage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "bOnAppearing": "gradientbackground.png";
         }
 
         async void OnSearchClicked(Object sender, EventArgs args)
@@ -48,6 +49,10 @@ namespace COS368FinalJokeApp
         async void OnTigerKingClicked(System.Object sender, System.EventArgs e)
         {
             await DisplayAlert("", "Currently Unavailable...", "OK");
+        }
+
+        private void OnAppearing(object sender, EventArgs e) {
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
     }
 }

@@ -1,11 +1,10 @@
-﻿using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+﻿using Xamarin.Forms;
 
 namespace COS368FinalJokeApp
 {
-    public partial class App : Application
-    {
+    public partial class App : Application {
+
+        public static bool Darkmode = false;  
         public App()
         {
             InitializeComponent();

@@ -16,6 +16,7 @@ namespace COS368FinalJokeApp
         public UploadPage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
 
         async void OnUploadTapped(Object sender, EventArgs args)
@@ -37,6 +38,11 @@ namespace COS368FinalJokeApp
         async void OnSubmitTapped(Object sender, EventArgs args)
         {
             await DisplayAlert("Submit Successful", "Joke posted on your tag!", "OK");
+        }
+
+        private void OnAppearing(object sender, EventArgs e) {
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
+ 
         }
     }
 }

@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.SettingsPage"
-             BackgroundImage="gradientbackground.png">
+             x:Class="COS368FinalJokeApp.SettingsPage">
 
     <ContentPage.Content>
         <StackLayout>
@@ -56,6 +55,19 @@
                                 </Label.FontFamily>
                             </Label>
                         </ViewCell>
+                        <ViewCell>
+                            <StackLayout Orientation ="Horizontal" >
+                                <Label Text="Dark Mode" HorizontalOptions="StartAndExpand" FontSize="50" TextColor="White">
+                                    <Label.FontFamily>
+                                        <OnPlatform x:TypeArguments="x:String">
+                                            <On Platform="iOS" Value="Jokerman" />
+                                            <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                                        </OnPlatform>
+                                    </Label.FontFamily>
+                                </Label>
+                                <Switch HorizontalOptions="End" Toggled="OnDarkmodeToggled" />
+                            </StackLayout>
+                        </ViewCell >
                     </TableSection>
                 </TableRoot>
             </TableView>
