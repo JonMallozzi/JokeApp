@@ -9,7 +9,7 @@
 
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
-            <Label Text="Sports" TextColor="White" FontSize="40" HorizontalOptions="Center">
+            <Label x:Name="Title" Text="Sports" TextColor="White" FontSize="40" HorizontalOptions="Center">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="Jokerman" />

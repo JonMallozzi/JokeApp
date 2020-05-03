@@ -30,7 +30,7 @@ namespace COS368FinalJokeApp
 
         async void OnCommentClicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new CommentsPage());
+            await Navigation.PushAsync(new CommentsPage(Title.Text));
         }
 
         async void OnFortniteClicked(System.Object sender, System.EventArgs e)
