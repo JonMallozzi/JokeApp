@@ -15,12 +15,14 @@ namespace COS368FinalJokeApp
         public HomePage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
             CVJokes.ItemsSource = new JokeService().GetJokesListHome();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
 
         async void OnShareClicked(System.Object sender, System.EventArgs e)
@@ -30,7 +32,7 @@ namespace COS368FinalJokeApp
 
         async void OnCommentClicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new CommentsPage());
+            await Navigation.PushAsync(new CommentsPage(Title.Text));
         }
 
         async void OnFortniteClicked(System.Object sender, System.EventArgs e)

@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -138,54 +138,54 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\covid19.png" />
+    <BundleResource Include="Resources\covid19.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\dad.png" />
+    <BundleResource Include="Resources\dad.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\fortnite.png" />
+    <BundleResource Include="Resources\fortnite.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\gradientbackground.png" />
+    <BundleResource Include="Resources\gradientbackground.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\sports.png" />
+    <BundleResource Include="Resources\sports.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\politics.png" />
+    <BundleResource Include="Resources\politics.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\tigerking.png" />
+    <BundleResource Include="Resources\tigerking.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_home.png" />
+    <BundleResource Include="Resources\icon_home.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_add.png" />
+    <BundleResource Include="Resources\icon_add.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_search.png" />
+    <BundleResource Include="Resources\icon_search.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_settings.png" />
+    <BundleResource Include="Resources\icon_settings.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_uploadphoto.png" />
+    <BundleResource Include="Resources\icon_uploadphoto.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\guijoke.jpg" />
+    <BundleResource Include="Resources\guijoke.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_comments.png" />
+    <BundleResource Include="Resources\icon_comments.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_happy.png" />
+    <BundleResource Include="Resources\icon_happy.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_sad.png" />
+    <BundleResource Include="Resources\icon_sad.png" />
   </ItemGroup>
   <ItemGroup>
-    <BundleResource Include="Resources\drawable\icon_share.png" />
+    <BundleResource Include="Resources\icon_share.png" />
   </ItemGroup>
 </Project>

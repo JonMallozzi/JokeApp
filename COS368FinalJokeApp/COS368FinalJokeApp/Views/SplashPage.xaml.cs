@@ -15,7 +15,7 @@ namespace COS368FinalJokeApp
         public SplashPage()
         {
             InitializeComponent();
-            
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
         async void OnTap(Object sender, EventArgs args)
         {

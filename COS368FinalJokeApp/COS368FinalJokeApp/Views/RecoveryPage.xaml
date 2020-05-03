@@ -4,8 +4,7 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="COS368FinalJokeApp.RecoveryPage"
-             BackgroundImage="gradientbackground.png">
+             x:Class="COS368FinalJokeApp.RecoveryPage">
 
     <ContentPage.Content>
         <StackLayout Padding="10">
@@ -19,7 +18,7 @@
             </Label>
             <Frame OutlineColor="White" CornerRadius="30" BackgroundColor="Transparent">
                 <StackLayout>
-                    <Entry Placeholder="Email"/>
+                    <Entry Placeholder="Email" PlaceholderColor="White"/>
                 </StackLayout>
             </Frame>
             <Label Text="Instructions will be sent to your email" Opacity="0.7" TextColor="White" FontSize="17" HorizontalOptions="Center">

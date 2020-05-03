@@ -15,6 +15,7 @@ namespace COS368FinalJokeApp
         public DadJokesPage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
@@ -31,7 +32,7 @@ namespace COS368FinalJokeApp
 
         async void OnCommentClicked(System.Object sender, System.EventArgs e)
         {
-            await Navigation.PushAsync(new CommentsPage());
+            await Navigation.PushAsync(new CommentsPage(Title.Text));
         }
 
         async void OnJokesScrolled(System.Object sender, System.EventArgs e)

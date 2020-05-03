@@ -13,6 +13,7 @@ namespace COS368FinalJokeApp
             NavigationPage.SetHasBackButton(this, false);
             NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
 
         async void OnForgotTapped(Object sender, EventArgs args)

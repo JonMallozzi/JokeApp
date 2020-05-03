@@ -1,8 +1,4 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,11 +11,12 @@ namespace COS368FinalJokeApp
         public SettingsPage()
         {
             InitializeComponent();
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
 
         async void OnNotificationsToggled(Object sender, ToggledEventArgs e)
         {
-            if (e.Value == true)
+            if (e.Value)
             {
                 await DisplayAlert("", "Notifications Turned On", "OK");
             }
@@ -42,6 +39,11 @@ namespace COS368FinalJokeApp
         async void OnLogoutTapped(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new LoginPage());
+        }
+
+        async void OnDarkmodeToggled(object sender, ToggledEventArgs e) {
+            App.Darkmode = e.Value; 
+            BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
         }
     }
 }

@@ -5,7 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.UploadPage"
-             BackgroundImage="gradientbackground.png">
+             Appearing="OnAppearing">
 
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
@@ -27,7 +27,7 @@
                     </Image.GestureRecognizers>
                 </Image>
             </Frame>
-            <Label Text="File Is :" x:Name="lbl" Padding="5" FontSize="20"/>
+            <Label Text="File Is :" x:Name="lbl" Padding="5" FontSize="20" TextColor="White"/>
             <Frame OutlineColor="White" CornerRadius="30" BackgroundColor="Transparent">
                 <Entry Placeholder="Tags: Dad Jokes, Etc"/>
             </Frame>

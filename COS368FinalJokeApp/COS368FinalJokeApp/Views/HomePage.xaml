@@ -5,11 +5,11 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.HomePage"
-             BackgroundImage="gradientbackground.png">
+             x:Name="ContentPage">
 
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
-            <Label Text="Feed" TextColor="White" FontSize="40" HorizontalOptions="Center">
+            <Label x:Name="Title" Text="Feed" TextColor="White" FontSize="40" HorizontalOptions="Center">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="Jokerman" />
