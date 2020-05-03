@@ -9,7 +9,7 @@
 
     <ContentPage.Content>
         <RelativeLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="J" VerticalOptions="Center" HorizontalOptions="Center" FontSize="400" TextColor="White">
+            <Label x:Name="Logo" Text="J" VerticalOptions="Center" HorizontalOptions="Center" FontSize="400">
                 <Label.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTap"/>
                 </Label.GestureRecognizers>

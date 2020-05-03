@@ -16,6 +16,10 @@ namespace COS368FinalJokeApp
         {
             InitializeComponent();
             BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
+            if(App.Darkmode)
+            {
+                Logo.TextColor = Color.White;
+            }
         }
         async void OnTap(Object sender, EventArgs args)
         {
