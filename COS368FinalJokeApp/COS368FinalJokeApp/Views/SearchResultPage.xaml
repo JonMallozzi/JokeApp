@@ -8,13 +8,23 @@
              BackgroundImage="gradientbackground.png">
     <ContentPage.Content>
         <StackLayout HorizontalOptions="FillAndExpand">
-            <Entry Placeholder="Search" x:Name="searchbar">
-            </Entry>
+            <SearchBar x:Name="SearchBar" Placeholder="Search for jokes" PlaceholderColor="White" TextColor="White" Unfocused="OnUnfocused"/>
             <ScrollView>
-                <Label Text="Result"/>
-                
+                <StackLayout>
+                    <Label x:Name="Label" Text="" TextColor="White"/>
+                    <Label x:Name="Label1" Text="" TextColor="White"/>
+                    <Label x:Name="Label2" Text="" TextColor="White"/>
+                    <Label x:Name="Label3" Text="" TextColor="White"/>
+                    <Label x:Name="Label4" Text="" TextColor="White"/>
+                    <Label x:Name="Label5" Text="" TextColor="White"/>
+                    <Label x:Name="Label6" Text="" TextColor="White"/>
+                    <Label x:Name="Label7" Text="" TextColor="White"/>
+                    <Label x:Name="Label8" Text="" TextColor="White"/>
+                    <Label x:Name="Label9" Text="" TextColor="White"/>
+                    <Label x:Name="Label10" Text="" TextColor="White"/>
+                    <Label x:Name="Label11" Text="" TextColor="White"/>
+                </StackLayout>
             </ScrollView>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
