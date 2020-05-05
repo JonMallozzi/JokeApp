@@ -6,19 +6,22 @@
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.PrivacyPage">
 
+    <NavigationPage.TitleView>
+        <Label Text="Privacy Policy" TextColor="White" FontSize="30" HorizontalTextAlignment="Center" Padding="0, 0, 60, 0">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Jokerman" />
+                    <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+    </NavigationPage.TitleView>
+    
     <ContentPage.Content>
         <ScrollView>
-        <StackLayout Padding="40">
-            <Label Text="Privacy Policy" TextColor="White" FontSize="30" Padding="10" HorizontalOptions="Center">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Jokerman" />
-                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
+            <StackLayout Padding="40, 10, 40, 0">
 
-            <Label Text="Information Collection and Use" FontSize="Subtitle" TextColor="White" FontAttributes="Bold"
+                <Label Text="Information Collection and Use" FontSize="Subtitle" TextColor="White" FontAttributes="Bold"
                  
                    HorizontalOptions="CenterAndExpand" />
 

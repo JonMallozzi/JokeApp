@@ -5,17 +5,20 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="COS368FinalJokeApp.DadJokesPage">
+
+    <NavigationPage.TitleView>
+        <Label x:Name="Title" Text="Dad Jokes" TextColor="White" FontSize="40" HorizontalTextAlignment="Center" Padding="0, 0, 60, 0">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String">
+                    <On Platform="iOS" Value="Jokerman" />
+                    <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                </OnPlatform>
+            </Label.FontFamily>
+        </Label>
+    </NavigationPage.TitleView>
     
     <ContentPage.Content>
         <StackLayout Padding="20, 10, 20, 10" Orientation="Vertical">
-            <Label x:Name="Title" Text="Dad Jokes" TextColor="White" FontSize="40" HorizontalOptions="Center">
-                <Label.FontFamily>
-                    <OnPlatform x:TypeArguments="x:String">
-                        <On Platform="iOS" Value="Jokerman" />
-                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
-                    </OnPlatform>
-                </Label.FontFamily>
-            </Label>
             <StackLayout Margin="-20, -5, -20, 0">
                 <BoxView HeightRequest="1" Color="White"/>
             </StackLayout>
