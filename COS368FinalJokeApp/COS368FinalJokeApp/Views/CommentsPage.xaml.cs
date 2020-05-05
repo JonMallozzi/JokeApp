@@ -6,15 +6,15 @@ using Xamarin.Forms;
 namespace COS368FinalJokeApp
 {
     public partial class CommentsPage : ContentPage {
+
         public CommentsPage(string title)
         {
             InitializeComponent();
             BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
-            NavigationPage.SetHasNavigationBar(this, false);
-            
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
+
             LoadComments(title);
-            Title.Text = title + " Comments";
-            
+            Title.Text = "Comments";
         }
 
         private void LoadComments(string title) {

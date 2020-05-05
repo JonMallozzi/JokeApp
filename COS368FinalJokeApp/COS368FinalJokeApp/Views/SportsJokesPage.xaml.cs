@@ -12,6 +12,9 @@ namespace COS368FinalJokeApp
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class SportsJokesPage : ContentPage
     {
+        private bool happySelected = false;
+        private bool sadSelected = false;
+
         public SportsJokesPage()
         {
             InitializeComponent();
@@ -43,15 +46,32 @@ namespace COS368FinalJokeApp
 
         async void OnHappyClicked(System.Object sender, System.EventArgs e)
         {
-            Dislike.BackgroundColor = Color.Transparent;
-            Like.BackgroundColor = Color.Blue;
+            happySelected = !happySelected;
+
+            if (happySelected)
+            {
+                Dislike.BackgroundColor = Color.Transparent;
+                Like.BackgroundColor = Color.Blue;
+            }
+            else
+            {
+                Like.BackgroundColor = Color.Transparent;
+            }
         }
 
         async void OnSadClicked(System.Object sender, System.EventArgs e)
         {
+            sadSelected = !sadSelected;
 
-            Like.BackgroundColor = Color.Transparent;
-            Dislike.BackgroundColor = Color.Blue;
+            if (sadSelected)
+            {
+                Like.BackgroundColor = Color.Transparent;
+                Dislike.BackgroundColor = Color.Blue;
+            }
+            else
+            {
+                Dislike.BackgroundColor = Color.Transparent;
+            }
         }
     }
 }
