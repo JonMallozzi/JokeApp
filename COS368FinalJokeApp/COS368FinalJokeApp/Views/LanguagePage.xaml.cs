@@ -17,6 +17,7 @@ namespace COS368FinalJokeApp
             InitializeComponent();
             BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
             ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
+            LangPicker.SelectedIndex = 1;
         }
     }
 }

@@ -16,7 +16,7 @@ namespace COS368FinalJokeApp
         {
             InitializeComponent();
             BackgroundImage = App.Darkmode ? "blackbackground.png" : "gradientbackground.png";
-            NavigationPage.SetHasNavigationBar(this, false);
+            ((NavigationPage)Application.Current.MainPage).BarBackgroundColor = Xamarin.Forms.Color.FromHex("F23333");
         }
 
         protected override void OnAppearing()
