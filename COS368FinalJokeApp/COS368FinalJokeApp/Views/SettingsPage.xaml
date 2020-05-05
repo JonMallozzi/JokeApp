@@ -8,7 +8,7 @@
 
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Settings" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center">
+            <Label Text="Settings" TextColor="White" FontSize="50" Padding="10" HorizontalOptions="Center"  Margin="0, -20, 0, 0">
                 <Label.FontFamily>
                     <OnPlatform x:TypeArguments="x:String">
                         <On Platform="iOS" Value="Jokerman" />
@@ -71,7 +71,7 @@
                     </TableSection>
                 </TableRoot>
             </TableView>
-            <Frame BackgroundColor="Crimson" Margin="70, 20, 70, 70" CornerRadius="60">
+            <Frame BackgroundColor="Crimson" Margin="70, 20, 70, 10" CornerRadius="60">
                 <Label Text="Log Out" TextColor="White" FontSize="50" Margin="0, -20, 0, -20" HorizontalOptions="Center">
                     <Label.GestureRecognizers>
                         <TapGestureRecognizer Tapped="OnLogoutTapped"/>
@@ -84,6 +84,14 @@
                     </Label.FontFamily>
                 </Label>
             </Frame>
+            <Label Text="Username: BigChungusFTW" TextColor="White" FontSize="20" Padding="10" HorizontalOptions="Center">
+                <Label.FontFamily>
+                    <OnPlatform x:TypeArguments="x:String">
+                        <On Platform="iOS" Value="Jokerman" />
+                        <On Platform="Android" Value="Jokerman-Regular.ttf#Jokerman-Regular" />
+                    </OnPlatform>
+                </Label.FontFamily>
+            </Label>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
