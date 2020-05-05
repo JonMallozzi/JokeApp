@@ -9,7 +9,7 @@
         <StackLayout HorizontalOptions="FillAndExpand">
             <SearchBar x:Name="SearchBar" Placeholder="Search for jokes" PlaceholderColor="White" TextColor="White" Unfocused="OnUnfocused"/>
             <ScrollView>
-                <StackLayout>
+                <StackLayout Padding="20, 0, 0, 0">
                     <Label x:Name="Label" Text="" TextColor="White"/>
                     <Label x:Name="Label1" Text="" TextColor="White"/>
                     <Label x:Name="Label2" Text="" TextColor="White"/>
